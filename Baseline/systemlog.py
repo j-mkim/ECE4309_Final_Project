@@ -25,11 +25,6 @@ def log_system_usage():
         disk = psutil.disk_usage('/')
         disk_usage = disk.percent
 
-        # Get Network usage
-        net_io = psutil.net_io_counters()
-        bytes_sent = net_io.bytes_sent
-        bytes_recv = net_io.bytes_recv
-
         # Log the system usage
         logging.info(f"CPU Usage: {cpu_usage}% | Memory Usage: {memory_usage}% | Disk Usage: {disk_usage}% | Bytes Sent: {bytes_sent} | Bytes Received: {bytes_recv}")
 
