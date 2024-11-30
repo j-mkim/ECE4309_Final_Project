@@ -26,7 +26,7 @@ def log_system_usage():
         disk_usage = disk.percent
 
         # Log the system usage
-        logging.info(f"CPU Usage: {cpu_usage}% | Memory Usage: {memory_usage}% | Disk Usage: {disk_usage}% | Bytes Sent: {bytes_sent} | Bytes Received: {bytes_recv}")
+        logging.info(f"CPU Usage: {cpu_usage}% | Memory Usage: {memory_usage}% | Disk Usage: {disk_usage}%")
 
 if __name__ == "__main__":
     log_system_usage()
